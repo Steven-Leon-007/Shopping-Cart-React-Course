@@ -2,8 +2,7 @@ import { Component } from 'react';
 
 const styles = {
     title: {
-        margin: '1rem',
-
+        fontFamily: 'Raleway, sans-serif'
     }
 }
 

@@ -4,11 +4,11 @@ import Button from './Button';
 const styles = {
     products: {
         padding: '1rem 1.5rem',
-        margin: '1rem',
+        margin: '1rem 0',
         border: '1px solid rgba(0, 0, 0, 0.5)',
         width: '30%',
         borderRadius: '.4rem',
-        backgroundColor: '#f2eac0',
+        backgroundColor: '#f9c37c',
     },
 
     img: {
