@@ -24,12 +24,17 @@ const styles = {
 }
 
 class Navbar extends Component {
+
     render() {
+        const { cart } = this.props;
+
         return (
             <header style={styles.header}>
                 <nav style={styles.navbar}>
                     <Logo />
-                    <Cart />
+                    <Cart
+                        cart={cart}
+                    />
                 </nav>
             </header>
         )

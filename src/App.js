@@ -15,7 +15,7 @@ class App extends Component {
     ],
 
     cart: [
-      // { name: "Tomate", price: 1500, img: "./products/tomate.png", quantity: 1 },
+
     ],
   }
   // This is a method but initialized as a property, for prevent this context errors
@@ -55,10 +55,11 @@ class App extends Component {
 
   render() {
 
-    console.log(this.state.cart);
     return (
       <div>
-        <Navbar />
+        <Navbar 
+          cart={this.state.cart}
+        />
         <Layout>
           <Title />
           <Products
