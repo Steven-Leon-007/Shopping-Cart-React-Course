@@ -26,7 +26,7 @@ const styles = {
 class Navbar extends Component {
 
     render() {
-        const { cart } = this.props;
+        const { cart, displayCart, isCartOpen } = this.props;
 
         return (
             <header style={styles.header}>
@@ -34,6 +34,8 @@ class Navbar extends Component {
                     <Logo />
                     <Cart
                         cart={cart}
+                        displayCart={displayCart}
+                        isCartOpen={isCartOpen}
                     />
                 </nav>
             </header>

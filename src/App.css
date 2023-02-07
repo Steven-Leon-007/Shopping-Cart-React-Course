@@ -9,6 +9,9 @@ h3{
   margin-bottom: .5rem;
 }
 
+li{
+  list-style: none;
+}
 
 .products-div{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

@@ -17,6 +17,8 @@ class App extends Component {
     cart: [
 
     ],
+
+    isCartOpen: false,
   }
   // This is a method but initialized as a property, for prevent this context errors
   // And remind to use concat method, because if you just overwrite the cart array will never add more that 1 item
@@ -53,12 +55,21 @@ class App extends Component {
     })
   }
 
+  displayCart = () => {
+    if(!this.state.cart.length){
+      return;
+    }
+    this.setState({ isCartOpen: !this.state.isCartOpen })
+  }
+
   render() {
 
     return (
       <div>
-        <Navbar 
+        <Navbar
           cart={this.state.cart}
+          isCartOpen= {this.state.isCartOpen}
+          displayCart= {this.displayCart}
         />
         <Layout>
           <Title />
